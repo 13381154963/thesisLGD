@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_gravity="center_vertical"
+    android:background="@color/main_tab_background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/divider_cacaca" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/bottom_huihua"
+            android:drawableTop="@drawable/tab_huihua"
+            style="@style/bottom_tab"
+            android:text="@string/bottom_huihua"/>
+        <RadioButton
+            android:id="@+id/bottom_xuanti"
+            android:drawableTop="@drawable/tab_xuanti"
+            style="@style/bottom_tab"
+            android:text="@string/bottom_huihua"/>
+        <RadioButton
+            android:id="@+id/bottom_jindu"
+            android:drawableTop="@drawable/tab_jindu"
+            style="@style/bottom_tab"
+            android:text="@string/bottom_huihua"/>
+        <RadioButton
+            android:id="@+id/bottom_more"
+            android:drawableTop="@drawable/tab_more"
+            style="@style/bottom_tab"
+            android:text="@string/bottom_huihua"/>
+
+
+    </RadioGroup>
+
+</LinearLayout>

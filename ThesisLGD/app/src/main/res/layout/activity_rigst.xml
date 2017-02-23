@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/background"
+    tools:context="com.baidu.thesislgd.login.RegistActivity">
+    <EditText
+        android:id="@+id/edit_regist_username"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="11"
+        android:layout_marginStart="@dimen/margin_start_double"
+        android:layout_marginEnd="@dimen/margin_start_double"
+        android:background="@drawable/circle_shape"
+        android:hint="@string/username"
+        android:paddingStart="@dimen/margin_start_double"
+        android:layout_below="@+id/circle_anvator"
+        android:layout_marginTop="@dimen/margin_start_bigg"
+        />
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:layout_marginStart="@dimen/margin_start_double"
+        android:layout_marginEnd="@dimen/margin_start_double"
+        android:background="@drawable/circle_shape"
+        android:hint="@string/yanzhengma"
+        android:layout_below="@+id/edit_regist_username"
+        android:layout_marginTop="@dimen/margin_start_bigg"
+        android:paddingStart="@dimen/margin_start_double"
+        android:id="@+id/edit_regist_yanzheng" />
+
+    <Button
+        android:id="@+id/bt_getyanzhengma"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@+id/edit_regist_yanzheng"
+        android:layout_below="@+id/edit_regist_username"
+        android:layout_marginTop="@dimen/margin_start_bigg"
+        android:background="@drawable/circle_full_shape"
+        android:onClick="getYanzhengma"
+        android:text="@string/getsms"/>
+
+    <Button
+        android:id="@+id/bt_regist"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="@dimen/margin_start_double"
+        android:layout_marginEnd="@dimen/margin_start_double"
+        android:layout_below="@+id/edit_regist_password"
+        android:layout_marginTop="@dimen/margin_start_bigg"
+        android:text="@string/regist"
+        android:textColor="@color/white"
+        android:onClick="onRegist"
+        android:background="@drawable/circle_full_shape"
+        />
+
+    <com.baidu.view.CircleImageView
+        android:id="@+id/circle_anvator"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/img1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bt_regist"
+            android:layout_marginTop="@dimen/margin_start_bigg"
+            android:gravity="center_horizontal"
+            android:text="@string/relogin"
+            />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:background="@drawable/circle_shape"
+        android:hint="@string/password"
+        android:layout_marginTop="32dp"
+        android:paddingStart="@dimen/margin_start_double"
+        android:id="@+id/edit_regist_password"
+        android:layout_below="@+id/edit_regist_yanzheng"
+        android:layout_alignStart="@+id/edit_regist_yanzheng" />
+
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_load"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/background"
+    tools:context="com.baidu.thesislgd.login.LoadActivity">
+
+    <EditText
+        android:id="@+id/edit_regist_username"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="11"
+        android:layout_marginStart="@dimen/margin_start_double"
+        android:layout_marginEnd="@dimen/margin_start_double"
+        android:background="@drawable/circle_shape"
+        android:hint="@string/username"
+        android:paddingStart="@dimen/margin_start_double"
+        android:layout_below="@+id/circle_anvator"
+        android:layout_marginTop="@dimen/margin_start_bigg"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_marginStart="@dimen/margin_start_double"
+        android:layout_marginEnd="@dimen/margin_start_double"
+        android:background="@drawable/circle_shape"
+        android:hint="@string/password"
+        android:layout_below="@+id/edit_regist_username"
+        android:layout_marginTop="@dimen/margin_start_bigg"
+        android:paddingStart="@dimen/margin_start_double"
+        android:id="@+id/edit_regist_yanzheng" />
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="@dimen/margin_start_double"
+        android:layout_marginEnd="@dimen/margin_start_double"
+        android:layout_below="@+id/edit_regist_yanzheng"
+        android:layout_marginTop="@dimen/margin_start_bigg"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:background="@drawable/circle_full_shape"
+        />
+
+    <com.baidu.view.CircleImageView
+        android:id="@+id/circle_anvator"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/img1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login"
+        android:layout_marginTop="@dimen/margin_start_bigg">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:onClick="onLoadRegist"
+            android:text="@string/regist"/>
+        <android.support.v4.widget.Space
+            android:layout_width="20dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="@string/forget"
+            />
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
